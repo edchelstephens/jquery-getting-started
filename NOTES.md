@@ -20,3 +20,7 @@
 ```
 
 ## Essentailly `$ = jQuery`
+
+### jQuery and $ is an alias to the jQuery function
+
+- saying $(); executes the jQuery function
