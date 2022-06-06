@@ -43,3 +43,15 @@ jQuery(function(){
 
 })
 ```
+
+# When jQuery "queries" a page, or selects something in a page, it actually retuns a set or an array of those items
+
+# let divs = $("div")
+
+- this will return all the divs on the page
+
+# let h2s = $("h2")
+
+- this will return all the h2's on the page
+
+## Even if there's only 1 div or 1 h2 on the page, you're going to get back a set always, that is, a set of 1 item in this case.
