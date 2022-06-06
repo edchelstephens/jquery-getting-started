@@ -59,3 +59,13 @@ jQuery(function(){
 ## Executing a funciton like `.addClassName` to a single set item and a multiple set, wrapped set, the action is the same, it applies to all the elements
 
 ## When querying something that does not exists, jQuery just simply returns an empty wrapped set.
+
+
+# jQuery works in sets, e.g. the `wrapped set`
+
+# jQuery also has this notion of getter and selector functions on wrapped set
+## query:
+    let h2 = $("h2")
+### getter:
+    h2.text() -> this returns the h2 text 
+    h2.text('new text') -> this sets the text of h2 to 'new text'
