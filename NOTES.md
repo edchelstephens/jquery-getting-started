@@ -57,3 +57,5 @@ jQuery(function(){
 ## Even if there's only 1 div or 1 h2 on the page, you're going to get back a set always, the `wrapped set` value, that is, a set of 1 item in this case.
 
 ## Executing a funciton like `.addClassName` to a single set item and a multiple set, wrapped set, the action is the same, it applies to all the elements
+
+## When querying something that does not exists, jQuery just simply returns an empty wrapped set.
