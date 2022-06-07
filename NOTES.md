@@ -78,3 +78,7 @@ jQuery(function(){
 - by passing a a fragment of html in jquery, you can create html elements in memory
   `$("<div>This is a div</div>")`
 - creates a div element in memory
+
+- You can also create an array of elements with:
+
+`let elements = $(['<span>one</span>', '<b>bold</b>', '<strong>strong</strong>'])`
