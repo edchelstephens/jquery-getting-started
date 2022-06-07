@@ -152,3 +152,7 @@ or with javascript
 
 - toggles hide or show
   `$("h2").toggle()` -> shows the h2s if they are hidden, or hides them if they are shown
+
+## hide(), show() and toggle() can also take callables which are things you can perform when on the action, like showing a notification toaster on toggle, etc
+
+`$("h2").toggle(()=> { toastr.success(message="Feature hidden")})`
