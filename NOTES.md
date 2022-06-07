@@ -157,9 +157,23 @@ or with javascript
 
 `$("h2").toggle(()=> { toastr.success(message="Feature hidden")})`
 
-### fadeIn(), fadeOut() 
+### fadeIn(), fadeOut()
+
 - fades in or out the selected wrapped set
 
 - you can also pass a callable on these functions to perform actions after fadeIn or fadeOUt
-`$("h2").fadeIn(()=>{ $("#special-features").addClass("bordered")})`
-this adds `bordered` class on element with id `special-features` after the h2's are done fading in
+  `$("h2").fadeIn(()=>{ $("#special-features").addClass("bordered")})`
+  this adds `bordered` class on element with id `special-features` after the h2's are done fading in
+
+# Events
+
+- just an event, that happens and then you can listen to them and do some actions
+
+Example HTML events:
+
+1. Page Load
+2. Key Pressed
+3. Button Clicked
+4. Form Submitted
+5. Window Scrolled
+6. Element Focused
