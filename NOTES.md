@@ -82,3 +82,12 @@ jQuery(function(){
 - You can also create an array of elements with:
 
 `let elements = $(['<span>one</span>', '<b>bold</b>', '<strong>strong</strong>'])`
+
+# Parents and Children
+
+- You can also get the parents and children of an html element with
+
+`$(<query_selector>).parents(<parent_query_selector>)`
+and
+
+`$(<query_selector>).children(<children_query_selector>)`
