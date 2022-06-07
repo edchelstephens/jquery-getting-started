@@ -194,3 +194,10 @@ shortcut:
 - `on(eventName, callable)`
 - example:
   `$("#save-button").on("click", ()=>{ console.log("save button clicked") })`
+
+# The `off` function
+
+- `off(event)`
+- Stop listening to the event on the object
+- example, stop listening on on click events:
+  `$("#save-button").off("click")`
