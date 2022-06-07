@@ -141,3 +141,7 @@ or with javascript
 })`
 
 `$("h2").removeClass(()=>{ return len < 0 ? "highlight bordered": "bordered" })`
+
+# hide() and show() functions
+
+- hides or shows an element by setting the display property
