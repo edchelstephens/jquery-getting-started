@@ -156,3 +156,10 @@ or with javascript
 ## hide(), show() and toggle() can also take callables which are things you can perform when on the action, like showing a notification toaster on toggle, etc
 
 `$("h2").toggle(()=> { toastr.success(message="Feature hidden")})`
+
+### fadeIn(), fadeOut() 
+- fades in or out the selected wrapped set
+
+- you can also pass a callable on these functions to perform actions after fadeIn or fadeOUt
+`$("h2").fadeIn(()=>{ $("#special-features").addClass("bordered")})`
+this adds `bordered` class on element with id `special-features` after the h2's are done fading in
