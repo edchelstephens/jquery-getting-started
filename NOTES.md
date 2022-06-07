@@ -120,3 +120,9 @@ or with javascript
   and querying again
   `$("h2").css("background-color")`
   > > > 'rgb(255, 0, 0)'
+
+
+### addClass() and removeClass() functions
+- adds or removes css class on element
+`$("h2").addClass("highlight")`
+`$("h2").removeClass("highlight")`
