@@ -104,11 +104,16 @@ This query changes the style of all h2s with color red.
 - the `css` funciton is a getter/setter function on a particular css style attribute of an element
 
 e.g.:
-getting the background color with css:
+##### getting the background color with css:
 `$("h2").css("background-color")`
 
 > > > 'rgba(0, 0, 0, 0)'
-> > > setting the background color:
+
+or with javascript
+`$("h2").css("backgroundColor")`
+>>> 'rgba(0, 0, 0, 0)'
+
+##### setting the background color:
 
 - you actually pass a javascript object with css styles on camelCase because this is javascript not css
   `$("h2").css({backgroundColor:"red"})`
