@@ -202,9 +202,17 @@ shortcut:
 - example, stop listening on on click events:
   `$("#save-button").off("click")`
 
-
 # The `one` function
+
 - `one(eventName, callback)`
 - executes the callback on the first occurence of the event only
-example:
+  example:
   `$("#save-button").one("click", ()=>{ console.warn("One click only")})`
+
+  # The `click` function
+
+  - `click(callback)`
+  - executes the callback on click events on the element
+  - this is a shorcut to `on("click", callback)`
+    example:
+    `$("#save-button").click(()=>{ console.warn("save button clicked")})`
