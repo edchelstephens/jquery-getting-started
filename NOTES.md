@@ -95,3 +95,6 @@ and
 # The `attr` function
 
 - Function to manipulate just about any attribute on an element
+
+`$("h2").attr("style", "color:red")`
+This query changes the style of all h2s with color red.
