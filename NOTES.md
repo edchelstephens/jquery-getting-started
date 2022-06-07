@@ -145,3 +145,10 @@ or with javascript
 # hide() and show() functions
 
 - hides or shows an element by setting the display property
+  `$("h2").hide()`
+  `$("h2").show()`
+
+# toggle()
+
+- toggles hide or show
+  `$("h2").toggle()` -> shows the h2s if they are hidden, or hides them if they are shown
