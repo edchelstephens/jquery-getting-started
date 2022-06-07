@@ -201,3 +201,10 @@ shortcut:
 - Stop listening to the event on the object
 - example, stop listening on on click events:
   `$("#save-button").off("click")`
+
+
+# The `one` function
+- `one(eventName, callback)`
+- executes the callback on the first occurence of the event only
+example:
+  `$("#save-button").one("click", ()=>{ console.warn("One click only")})`
