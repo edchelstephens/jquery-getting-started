@@ -187,3 +187,10 @@ syntax:
 
 shortcut:
 `$(()=>{ // things to do here })`
+
+# The `on` function
+
+- takes 2 paramenters,
+- `on(eventName, callable)`
+- example:
+  `$("#save-button").on("click", ()=>{ console.log("save button clicked") })`
