@@ -227,3 +227,7 @@ the `dblclick(callBack)` function:
 
 the `mouseenter(callback)` function:
 `$("#save-button").mouseenter(()=>{ console.error("mouse enter")})`
+
+the `blur(callback)` function
+
+- `$("#save-button").blur(()=>console.warn("blurrinng, don't blur"))`
