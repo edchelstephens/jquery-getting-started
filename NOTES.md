@@ -216,3 +216,7 @@ shortcut:
   - this is a shorcut to `on("click", callback)`
     example:
     `$("#save-button").click(()=>{ console.warn("save button clicked")})`
+
+# More event functions here:
+
+https://api.jquery.com/category/events/
