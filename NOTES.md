@@ -91,3 +91,7 @@ jQuery(function(){
 and
 
 `$(<query_selector>).children(<children_query_selector>)`
+
+# The `attr` function
+
+- Function to manipulate just about any attribute on an element
