@@ -60,12 +60,21 @@ jQuery(function(){
 
 ## When querying something that does not exists, jQuery just simply returns an empty wrapped set.
 
-
 # jQuery works in sets, e.g. the `wrapped set`
 
 # jQuery also has this notion of getter and selector functions on wrapped set
+
 ## query:
+
     let h2 = $("h2")
+
 ### getter:
-    h2.text() -> this returns the h2 text 
+
+    h2.text() -> this returns the h2 text
     h2.text('new text') -> this sets the text of h2 to 'new text'
+
+# HTML Literals
+
+- by passing a a fragment of html in jquery, you can create html elements in memory
+  `$("<div>This is a div</div>")`
+- creates a div element in memory
