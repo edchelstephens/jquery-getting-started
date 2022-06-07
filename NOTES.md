@@ -231,3 +231,6 @@ the `mouseenter(callback)` function:
 the `blur(callback)` function
 
 - `$("#save-button").blur(()=>console.warn("blurrinng, don't blur"))`
+
+# HTML events reference here:
+https://developer.mozilla.org/en-US/docs/Web/Events
