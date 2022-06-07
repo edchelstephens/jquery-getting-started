@@ -220,3 +220,10 @@ shortcut:
 # More event functions here:
 
 https://api.jquery.com/category/events/
+
+examples:
+the `dblclick(callBack)` function:
+`$("#save-button").dblclick(()=>{ console.error("double clicked")})`
+
+the `mouseenter(callback)` function:
+`$("#save-button").mouseenter(()=>{ console.error("mouse enter")})`
