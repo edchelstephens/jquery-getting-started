@@ -104,14 +104,17 @@ This query changes the style of all h2s with color red.
 - the `css` funciton is a getter/setter function on a particular css style attribute of an element
 
 e.g.:
+
 ##### getting the background color with css:
+
 `$("h2").css("background-color")`
 
 > > > 'rgba(0, 0, 0, 0)'
 
 or with javascript
 `$("h2").css("backgroundColor")`
->>> 'rgba(0, 0, 0, 0)'
+
+> > > 'rgba(0, 0, 0, 0)'
 
 ##### setting the background color:
 
@@ -121,8 +124,20 @@ or with javascript
   `$("h2").css("background-color")`
   > > > 'rgb(255, 0, 0)'
 
-
 ### addClass() and removeClass() functions
+
 - adds or removes css class on element
-`$("h2").addClass("highlight")`
-`$("h2").removeClass("highlight")`
+  `$("h2").addClass("highlight")`
+  `$("h2").removeClass("highlight")`
+
+- you can also pass a callable on addClass and removeClass that returns the string of css class to add or remove
+
+`let len = 1`
+
+`$("h2").addClass(()=>{
+
+    return  len == 1 ? "highlight":"bordered"
+
+})`
+
+`$("h2").removeClass(()=>{ return len < 0 ? "highlight bordered": "bordered" })`
