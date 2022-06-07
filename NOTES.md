@@ -177,3 +177,13 @@ Example HTML events:
 4. Form Submitted
 5. Window Scrolled
 6. Element Focused
+
+# The jQuery read() function
+
+- runs when the page has been loaded completely and ready to be manipulated with scripts
+
+syntax:
+`$(document).ready(()=>{ // things to do here })`
+
+shortcut:
+`$(()=>{ // things to do here })`
