@@ -246,3 +246,23 @@ instead of this approach which queries the div elements 3 times:
 you can just apply one query with chaning:
 `$("div").addClass("bordered").height("200px").width("50%")`
 This way it's more efficient since the element query or selection only happens once they just the styles get's applied via chaining
+
+# since jquery returns a wrapped set, you can perform set operations with it like each
+
+```
+let items = $("#special-features li");
+
+items.width("50%")
+        .height("200px")
+        .addClass("highlight bordered")
+        .each((index, item)=>{
+          console.warn("index:", index)
+          console.error("item:", item)
+          let $item = $(item);
+          let item_text = $item.text()
+          console.log("item text:", item_text)
+          item_text = item_text + " with id -> " + $item.attr("data-feature-id")
+          console.warn("updated item text:", item_text)
+          $item.text(item_text)
+                  })
+```
