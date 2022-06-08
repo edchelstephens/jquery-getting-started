@@ -266,3 +266,15 @@ items.width("50%")
           $item.text(item_text)
                   })
 ```
+
+Chaining applies to all items of the wrapped set, even if just one.
+
+```
+let saveButton = $("#save-button");
+
+saveButton.click(()=>{
+
+    console.warn("About to be bordered")
+}).addClass("bordered")
+
+```
