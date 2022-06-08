@@ -247,7 +247,7 @@ you can just apply one query with chaning:
 `$("div").addClass("bordered").height("200px").width("50%")`
 This way it's more efficient since the element query or selection only happens once they just the styles get's applied via chaining
 
-# since jquery returns a wrapped set, you can perform set operations with it like each
+# since jquery returns a wrapped set, you can perform set operations with it like `each` https://api.jquery.com/each/
 
 ```
 let items = $("#special-features li");
