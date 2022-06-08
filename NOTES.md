@@ -233,4 +233,16 @@ the `blur(callback)` function
 - `$("#save-button").blur(()=>console.warn("blurrinng, don't blur"))`
 
 # HTML events reference here:
+
 https://developer.mozilla.org/en-US/docs/Web/Events
+
+# jQuery chaining
+
+instead of this approach which queries the div elements 3 times:
+`$("div").addClass("bordered")`
+`$("div").height("200px")`
+`$("div").width("50%")`
+
+you can just apply one query with chaning:
+`$("div").addClass("bordered").height("200px").width("50%")`
+This way it's more efficient since the element query or selection only happens once they just the styles get's applied via chaining
