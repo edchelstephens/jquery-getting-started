@@ -289,3 +289,7 @@ e.g.
 `$('#notes-box').val()` -> returns the text area value
 while
 `$('#notes-box').val("Some notes")` -> sets 'Some notes' as the value of the textbox
+
+## for date inputs
+
+`val()` setter values must conform to string format -> `yyyy-MM-dd`
