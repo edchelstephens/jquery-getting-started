@@ -278,3 +278,14 @@ saveButton.click(()=>{
 }).addClass("bordered")
 
 ```
+
+# `val()` function
+
+- a getter/setter function for html elements values
+
+e.g.
+<textarea id="notes-box"></text-area>
+
+`$('#notes-box').val()` -> returns the text area value
+while
+`$('#notes-box').val("Some notes")` -> sets 'Some notes' as the value of the textbox
