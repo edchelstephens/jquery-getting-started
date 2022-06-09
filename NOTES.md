@@ -326,3 +326,18 @@ Selector:
 `input[name="available"]:checked`
 means,
 select all the inputs with an attribute name='available' that has a pseudoclass of checked, or that has an attribute `checked`
+
+
+# Naming variables:
+
+when naming variables with Jquery, it's best to prepend the variable with $, to differentiate jQuerry wrapped set varaiables from actual DOM elements
+
+e.g.
+
+Actual dom elements:
+
+`let h2s = document.getElementsByTagName("h2")` -> returns html DOM elements
+where as
+`let $h2s=$("h2")` -> returns a jquerry wrapped set 
+
+so when something is prefixed with $, we know that it's a jquerry wrapped set variable, if not, it's an actual dom element.
