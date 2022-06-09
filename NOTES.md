@@ -284,7 +284,7 @@ saveButton.click(()=>{
 - a getter/setter function for html elements values
 
 e.g.
-<textarea id="notes-box"></text-area>
+`<textarea id="notes-box"></text-area>`
 
 `$('#notes-box').val()` -> returns the text area value
 while
@@ -293,3 +293,14 @@ while
 ## for date inputs
 
 `val()` setter values must conform to string format -> `yyyy-MM-dd`
+
+# For checkboxes:
+
+To set if checked, use the `prop` getter/setter function
+
+`<input type="checkbox" id="checkbox">`
+
+`$("#checkbox").prop("checked")` -> returns `false`
+`$("#checkbox").prop("checked", true)` -> sets the checkbox checked
+i.e.
+`<input type="checkbox" id="checkbox" checked>`
