@@ -304,3 +304,25 @@ To set if checked, use the `prop` getter/setter function
 `$("#checkbox").prop("checked", true)` -> sets the checkbox checked
 i.e.
 `<input type="checkbox" id="checkbox" checked>`
+
+# For radio buttons:
+
+to get the checked value:
+
+```
+h3>Availability:</h3>
+<input type="radio" name="available" value="immediate" id="avail-immed-radio" checked>
+<label for="avail-immed-radio">Immediate</label>
+<br>
+<input type="radio" name="available" value="delayed" id="avail-delayed-radio">
+<label for="avail-delayed-radio">Delayed</label>
+
+
+```
+
+`$('input[name="available"]:checked).val()` -> which returns 'immediate'
+
+Selector:
+`input[name="available"]:checked`
+means,
+select all the inputs with an attribute name='available' that has a pseudoclass of checked, or that has an attribute `checked`
